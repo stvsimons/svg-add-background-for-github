@@ -24,7 +24,21 @@ define('CacheDirectory', dirname(__DIR__) . '/cache-icons');
 ```
 
 ## Usage
-Using an the example bitbucket/bitbucket-original icon (which has a transparent background):
+### Query String Parameters:
+#### icon (required)
+Example icon=&lt;icon-group&gt;/&lt;icon-name&gt; or icon=swift/swift-original-wordmark<br>
+Value is "&lt;icon-group&gt;/&lt;icon-name&gt;".svg of the Devicons icon to get.<br>
+The extension (.svg) is ignored if included.
+
+#### color (optional, default 'ffffff')
+Example color=ff0000<br>
+Fill color to use for icon background.<br>
+Must be hex values, do not include leading '#'.
+
+---
+
+#### Examples
+The default bitbucket/bitbucket-original icon (which has a transparent background):
 ```
 <img height="200" alt="original" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg">
 ```
@@ -43,13 +57,3 @@ or with red background
 <img height="200" alt="icon" src="https://stevesimons.com/gh-svg.php?icon=bitbucket/bitbucket-original&color=ff0000">
 
 
-### Query String Parameters:
-#### icon (required)
-Example icon=&lt;icon-group&gt;/&lt;icon-name&gt; or icon=swift/swift-original-wordmark<br>
-Value is "&lt;icon-group&gt;/&lt;icon-name&gt;".svg of the Devicons icon to get.<br>
-The extension (.svg) is ignored if included.
-
-#### color (optional, default 'ffffff')
-Example color=ff0000<br>
-Fill color to use for icon background.<br>
-Must be hex values, do not include leading '#'.
